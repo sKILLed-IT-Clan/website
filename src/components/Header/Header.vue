@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <div class="container">
       <Logo />
       <Nav />
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style scoped>
-header {
+.header {
   width: 100%;
   padding: 0 36px;
 }
