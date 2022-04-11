@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <ul class="menu" :class="{active: isActive}">
+      <ul class="menu">
         <li>
           <a href="https://www.facebook.com/skilleditclan" target="_new">
             <img src="@/assets/facebook.svg" />
@@ -30,7 +30,7 @@
 <style scoped>
 .footer {
   width: 100%;
-  padding: 0 36px;
+  padding: 36px;
 }
 
 .menu {

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:class="getClass()">
     <Header />
     <router-view/>
     <Footer />
@@ -16,16 +16,48 @@ export default {
   components: {
     Header,
     Footer
+  },
+
+  methods: {
+    getClass () {
+      const path = this.$route.path
+      let className = ''
+
+      if (path.split('/')[1]) {
+        className = path.split('/')[1]
+      } else {
+        className = 'home'
+      }
+
+      return className
+    }
   }
 }
 </script>
 
 <style>
-html {
-  background-image: url('./assets/lights.jpg');
+@font-face {
+  font-family: 'Audiowide';
+  src: local('Audiowide'),
+   url('~@/assets/fonts/Audiowide-Regular.ttf') format('truetype');
+}
+
+#app {
   background-position: center;
   height: 100vh;
   overflow-x: hidden;
+}
+
+.home {
+  background-image: url('./assets/lights.jpg');
+}
+
+.join {
+  background-image: url('./assets/smoke.jpg');
+}
+
+.leaders {
+  background-image: url('./assets/leaders.png');
 }
 
 #app {
@@ -34,7 +66,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 body {

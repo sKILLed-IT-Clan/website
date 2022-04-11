@@ -82,7 +82,6 @@ nav {
   display: flex;
   justify-content: start;
   margin: 0;
-  display: flex;
   list-style-type: none;
   gap: 34px;
 }
