@@ -22,7 +22,6 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  padding: 0 36px;
 }
 
 .container {
@@ -30,5 +29,23 @@ export default {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 106px 1fr;
+}
+
+.header > .container > a {
+  order: 2;
+}
+
+.header > .container > nav {
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  .header > .container > a {
+    order: 1;
+  }
+
+  .header > .container > nav {
+    order: 2;
+  }
 }
 </style>

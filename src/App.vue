@@ -2,17 +2,20 @@
   <div id="app">
     <Header />
     <router-view/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 
 export default {
   name: 'App',
 
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
@@ -32,5 +35,9 @@ html {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+body {
+  margin: 0 auto;
 }
 </style>

@@ -70,7 +70,6 @@ export default {
     },
 
     toggleActive () {
-      console.log('link clicked ', this)
       this.isActive = !this.isActive
       document.querySelector('.active').classList.toggle('active')
     }
@@ -81,19 +80,18 @@ export default {
 <style scoped>
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   margin: 0;
   display: flex;
   list-style-type: none;
   gap: 34px;
 }
 
-/* .menu {
-  margin: 0;
-  display: flex;
-  list-style-type: none;
-  gap: 34px;
-} */
+@media (min-width: 1024px) {
+  nav {
+    justify-content: space-around;
+  }
+}
 
 @media (max-width: 768px) {
   .menu {
