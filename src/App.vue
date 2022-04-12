@@ -42,6 +42,12 @@ export default {
    url('~@/assets/fonts/Audiowide-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+   url('~@/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
 #app {
   background-position: center;
   height: 100vh;
