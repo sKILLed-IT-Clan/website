@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .container {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight: normal;
