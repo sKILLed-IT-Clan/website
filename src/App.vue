@@ -54,7 +54,8 @@ export default {
   overflow-x: hidden;
 }
 
-.home {
+.home,
+.roster {
   background-image: url('./assets/lights.jpg');
 }
 
@@ -67,7 +68,7 @@ export default {
 }
 
 #app {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
