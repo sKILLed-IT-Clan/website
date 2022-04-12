@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -47,7 +47,7 @@ export default {
   color: #fff;
   max-width: 1400px;
   margin: 0 auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 h1 {
@@ -67,6 +67,6 @@ h1 {
 
 .games .logo {
   width: 100%;
-  max-width: auto;
+  max-width: 313px !important;
 }
 </style>

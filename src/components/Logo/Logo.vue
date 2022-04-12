@@ -9,7 +9,6 @@
 <style scoped>
   .logo {
     width: 100%;
-    max-width: 106px;
     margin-right: 50px;
   }
 </style>
