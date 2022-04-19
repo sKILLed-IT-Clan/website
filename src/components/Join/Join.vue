@@ -7,7 +7,9 @@
 
     <div class="games">
       <div class="warzone">
-        <img src="@/assets/warzone-art.svg" />
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5mnQb-wEYz0XGc6u1WfOsTLR9CfJit0-nvO6u5tirOUZY_Q/viewform?usp=pp_url" target="_blank">
+          <img src="@/assets/warzone-art.svg" />
+        </a>
 
         <div class="games__leaders">
           <h4>Director of Call of Duty: Warzone</h4>
@@ -21,7 +23,9 @@
         For Assistance, Questions, or Concerns regarding our Warzone or Apex Legends Branches, you may contact the following members via Discord Direct Message.
       </span>
       <div class="apex">
-        <img src="@/assets/apex-art.svg" />
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiMjsKNk-gK6s2whHOXeU1-21X5OmZFiclRH7sJvdJEPNFBg/viewform?usp=pp_url" target="_blank">
+          <img src="@/assets/apex-art.svg" />
+        </a>
 
         <div class="games__leaders">
           <h4>Director of Apex Legends:</h4>
