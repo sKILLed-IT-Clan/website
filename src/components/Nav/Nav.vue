@@ -23,34 +23,7 @@
           <router-link @click.native="toggleActive()" to="/join">Join sKILLed-IT</router-link>
         </li>
       </ul>
-
-      <!-- <div @click="toggleMenu()" class="hamburger" :class="{active: isActive}">
-        <div class="line" id="one"></div>
-        <div class="line" id="two"></div>
-        <div class="line" id="three"></div>
-      </div> -->
     </nav>
-
-    <!-- <div class="mobile-menu">
-      <ul class="mobile-menu__items">
-        <li>
-          <router-link to="/about">About Us</router-link>
-        </li>
-        <li>
-          <router-link to="/history">Our History</router-link>
-        </li>
-        <li>
-          <router-link to="/leaders">Meet Our Leaders</router-link>
-        </li>
-        <li>
-          <router-link to="/roster">Competitive Roster</router-link>
-        </li>
-        <li>
-          <router-link to="/join">Join sKILLed-IT</router-link>
-        </li>
-      </ul>
-    </div> -->
-  <!-- </div> -->
 </template>
 
 <script>
@@ -64,8 +37,6 @@ export default {
   methods: {
     toggleMenu () {
       this.isActive = !this.isActive
-      // document.querySelector('.mobile-menu').classList.toggle('active')
-      // document.querySelector('.header').classList.toggle('active')
       console.log('menu item clicked ', this)
     },
 
@@ -78,16 +49,12 @@ export default {
 </script>
 
 <style scoped>
-nav {
-  display: flex;
-  justify-content: start;
-  margin: 0;
-  list-style-type: none;
-  gap: 34px;
-}
-
 @media (min-width: 1024px) {
   nav {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    gap: 34px;
     justify-content: space-around;
   }
 }
@@ -150,6 +117,7 @@ a {
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
+  z-index: 1;
 }
 
 .menu-button::before {
@@ -184,12 +152,13 @@ a {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    padding-top: 72%;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: #222;
   }
 
   #menu-toggle ~ .menu li {
@@ -203,7 +172,7 @@ a {
   #menu-toggle:checked ~ .menu li {
     border: 1px solid #333;
     height: 2.5em;
-    padding: 0.5em;
+    padding: 0.5em 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 
@@ -214,7 +183,6 @@ a {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: #222;
   }
 
   .menu > li:not(:last-child) {

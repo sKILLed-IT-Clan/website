@@ -30,7 +30,13 @@
 <style scoped>
 .footer {
   width: 100%;
-  padding: 36px;
+  padding: 36px 0;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 36px;
+  }
 }
 
 .menu {

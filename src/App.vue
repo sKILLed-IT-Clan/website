@@ -48,6 +48,10 @@ export default {
    url('~@/assets/fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #app {
   background-position: center;
   height: 100vh;

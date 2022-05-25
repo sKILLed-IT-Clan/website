@@ -16,9 +16,9 @@ export default {
 
 <style scoped>
 h1 {
-  margin: 170px 14px 0;
+  margin: 170px auto 0 auto;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-size: 50px;
+  font-size: 21px;
   font-style: italic;
   font-weight: normal;
   font-stretch: normal;
@@ -29,6 +29,7 @@ h1 {
 
 @media (min-width: 1024px) {
   h1 {
+    font-size: 50px;
     margin: 202.8px 88px 262px 41.1px;
   }
 }
