@@ -1,7 +1,9 @@
 <template>
   <header class="header">
-    <Logo />
-    <Nav />
+    <!-- <div class="container"> -->
+      <Logo />
+      <Nav />
+    <!-- </div> -->
   </header>
 </template>
 
@@ -20,37 +22,44 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
-  padding: 1em;
 }
 
-/* .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 106px 1fr;
-} */
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    padding: 1em;
+  }
+}
 
-/* .header > .container > a {
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 106px 1fr;
+  }
+}
+
+.header > a {
   order: 2;
 }
 
-.header > .container > nav {
+.header > nav {
   order: 1;
 }
 
 @media (min-width: 1024px) {
-  .header > .container > a {
+  .header > a {
     order: 1;
   }
 
-  .header > .container > nav {
+  .header > nav {
     order: 2;
   }
-} */
+}
 </style>

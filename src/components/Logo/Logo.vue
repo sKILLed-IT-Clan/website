@@ -9,9 +9,15 @@
 <style scoped>
   .logo {
     width: 25%;
-    margin-right: 95px;
+    margin-right: 120px;
     order: 1;
     z-index: 1;
+  }
+
+  @media (min-width: 820px) {
+    .logo {
+      margin-right: 200px;
+    }
   }
 
   @media (min-width: 1024px) {

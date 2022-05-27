@@ -59,16 +59,6 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
-  .menu {
-    visibility: hidden;
-  }
-
-  .menu.active {
-    visibility: visible;
-  }
-}
-
 li {
   margin: 0 auto;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -144,7 +134,17 @@ a {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .menu {
+    visibility: hidden;
+  }
+
+  .menu.active {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1024px) {
   .menu-button-container {
     display: flex;
   }
@@ -152,7 +152,7 @@ a {
   .menu {
     position: absolute;
     top: 0;
-    padding-top: 72%;
+    padding-top: 62%;
     left: 0;
     flex-direction: column;
     width: 100%;
